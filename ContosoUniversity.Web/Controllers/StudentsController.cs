@@ -1,14 +1,3 @@
-using System;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using ContosoUniversity.Data.Entities;
-using ContosoUniversity.Common.Interfaces;
-using ContosoUniversity.Common;
-using ContosoUniversity.Data.DbContexts;
-using Microsoft.AspNetCore.Authorization;
-
 namespace ContosoUniversity.Web.Controllers
 {
     public class StudentsController : Controller

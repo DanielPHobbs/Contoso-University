@@ -1,5 +1,4 @@
-﻿using ContosoUniversity.Data;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ContosoUniversity.Data.Entities

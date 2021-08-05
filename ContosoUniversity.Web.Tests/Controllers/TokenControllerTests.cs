@@ -1,19 +1,19 @@
 ﻿using ContosoUniversity.Data.Entities;
+using ContosoUniversity.Web.Controllers;
+using ContosoUniversity.Web.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Moq;
 using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Threading.Tasks;
 using Xunit;
 using Xunit.Abstractions;
-using System.Collections.Generic;
-using ContosoUniversity.Web.Controllers;
-using ContosoUniversity.Web.ViewModels;
-using Microsoft.Extensions.Configuration;
-using System.IO;
 
 namespace ContosoUniversity.Web.Tests.Controllers
 {
@@ -31,7 +31,7 @@ namespace ContosoUniversity.Web.Tests.Controllers
               .SetBasePath(Path.GetFullPath(@"..\..\..\..\ContosoUniversity.Web"))
               .AddJsonFile("appsettings.development.json")
               .Build();
-            
+
             _sut = new TokenController(_fakeSignInManager, _fakeUserManager, config);
         }
 
@@ -54,7 +54,7 @@ namespace ContosoUniversity.Web.Tests.Controllers
                 Email = "admin@contoso.com",
                 Password = "Pass@word1!"
             };
-            
+
             var result = await _sut.Create(vm);
 
             Assert.IsType<OkObjectResult>(result);

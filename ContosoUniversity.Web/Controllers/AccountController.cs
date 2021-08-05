@@ -1,14 +1,5 @@
-﻿using ContosoUniversity.Web.ViewModels;
-using Microsoft.AspNetCore.Mvc;
-using ContosoUniversity.Data.Entities;
-using Microsoft.AspNetCore.Identity;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
-using ContosoUniversity.Common;
-using ContosoUniversity.Web.Helpers;
-using System.Linq;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using System.Security.Claims;
+﻿using ContosoUniversity.Web.Helpers;
+using ContosoUniversity.Web.ViewModels;
 
 namespace ContosoUniversity.Web.Controllers
 {

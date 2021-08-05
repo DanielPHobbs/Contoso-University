@@ -1,7 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc.Rendering;
-using System.Collections.Generic;
-
-namespace ContosoUniversity.Web.ViewModels
+﻿namespace ContosoUniversity.Web.ViewModels
 {
     public class SendCodeViewModel
     {

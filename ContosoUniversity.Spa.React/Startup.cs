@@ -1,12 +1,3 @@
-using ContosoUniversity.Common;
-using ContosoUniversity.Data.DbContexts;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using AutoMapper;
-
 namespace ContosoUniversity.Spa.React
 {
     public class Startup

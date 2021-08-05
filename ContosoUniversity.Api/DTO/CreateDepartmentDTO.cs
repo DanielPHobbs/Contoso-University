@@ -1,7 +1,4 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-
-namespace ContosoUniversity.Api.DTO
+﻿namespace ContosoUniversity.Api.DTO
 {
     public class CreateDepartmentDTO
     {

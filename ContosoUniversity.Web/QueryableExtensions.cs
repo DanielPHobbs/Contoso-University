@@ -1,8 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Query.Internal;
-using System.Linq;
-
-namespace ContosoUniversity
+﻿namespace ContosoUniversity
 {
     // see issue @ https://stackoverflow.com/questions/27038253/mock-asnotracking-entity-framework
     // workaround @ https://github.com/aspnet/EntityFramework/issues/7937

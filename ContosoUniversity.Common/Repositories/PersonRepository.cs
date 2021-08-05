@@ -1,9 +1,9 @@
-﻿using ContosoUniversity.Data.Entities;
-using ContosoUniversity.Common.Interfaces;
+﻿using ContosoUniversity.Common.Interfaces;
+using ContosoUniversity.Data;
+using ContosoUniversity.Data.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
-using ContosoUniversity.Data;
-using Microsoft.EntityFrameworkCore;
 
 namespace ContosoUniversity.Common.Repositories
 {

@@ -1,10 +1,9 @@
-﻿using ContosoUniversity.Data.Entities;
-using ContosoUniversity.Common.Interfaces;
+﻿using ContosoUniversity.Common.Interfaces;
+using ContosoUniversity.Data.Entities;
 using Microsoft.EntityFrameworkCore;
+using System.Data.Common;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Data.Common;
-using ContosoUniversity.Data.DbContexts;
 
 namespace ContosoUniversity.Data
 {
@@ -59,7 +58,7 @@ namespace ContosoUniversity.Data
         {
             await context.SaveChangesAsync();
         }
-        
+
         public async Task<int> ExecuteSqlCommandAsync(string queryString)
         {
             return await context.Database.ExecuteSqlCommandAsync(queryString);

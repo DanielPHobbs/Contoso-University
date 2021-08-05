@@ -1,7 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc.RazorPages;
-using System;
-
-namespace ContosoUniversity.Web.Pages
+﻿namespace ContosoUniversity.Web.Pages
 {
     public class ContactModel : PageModel
     {

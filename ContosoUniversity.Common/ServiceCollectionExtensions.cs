@@ -1,19 +1,18 @@
-﻿using ContosoUniversity.Data;
+﻿using AutoMapper;
+using ContosoUniversity.Common.Data;
+using ContosoUniversity.Common.DTO;
+using ContosoUniversity.Common.Interfaces;
+using ContosoUniversity.Data;
 using ContosoUniversity.Data.DbContexts;
 using ContosoUniversity.Data.Entities;
-using ContosoUniversity.Common.Interfaces;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using ContosoUniversity.Common.Data;
-using AutoMapper;
-using ContosoUniversity.Common.DTO;
-using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.IdentityModel.Tokens;
+using System;
 using System.Text;
 
 namespace ContosoUniversity.Common

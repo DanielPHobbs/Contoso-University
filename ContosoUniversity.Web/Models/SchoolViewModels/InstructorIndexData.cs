@@ -1,7 +1,4 @@
-﻿using ContosoUniversity.Data.Entities;
-using System.Collections.Generic;
-
-namespace ContosoUniversity.Models.SchoolViewModels
+﻿namespace ContosoUniversity.Models.SchoolViewModels
 {
     public class InstructorIndexData
     {

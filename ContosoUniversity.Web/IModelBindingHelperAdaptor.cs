@@ -1,9 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Linq.Expressions;
-using System.Threading.Tasks;
-
-namespace ContosoUniversity.Web
+﻿namespace ContosoUniversity.Web
 {
     public interface IModelBindingHelperAdaptor
     {

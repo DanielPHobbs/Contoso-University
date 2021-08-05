@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace ContosoUniversity.Web.ViewModels
+﻿namespace ContosoUniversity.Web.ViewModels
 {
     public class VerifyPhoneNumberViewModel
     {

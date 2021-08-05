@@ -1,11 +1,5 @@
-using ContosoUniversity.Data.Entities;
-using ContosoUniversity.Common;
 using ContosoUniversity.Web.Enums;
 using ContosoUniversity.Web.ViewModels;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
 
 namespace ContosoUniversity.Web.Controllers
 {

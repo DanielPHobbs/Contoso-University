@@ -1,8 +1,8 @@
-﻿using Microsoft.Extensions.Logging;
-using ContosoUniversity.Common.Interfaces;
-using Microsoft.Extensions.Options;
-using Microsoft.AspNetCore.Hosting;
+﻿using ContosoUniversity.Common.Interfaces;
 using ContosoUniversity.Data.DbContexts;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 
 namespace ContosoUniversity.Common.Data
 {
@@ -13,7 +13,7 @@ namespace ContosoUniversity.Common.Data
         private readonly SampleData _data;
         private readonly IHostingEnvironment _environment;
 
-        public ApiInitializer(ApiContext context, 
+        public ApiInitializer(ApiContext context,
             ILoggerFactory loggerFactory,
             IOptions<SampleData> dataOptions,
             IHostingEnvironment env)

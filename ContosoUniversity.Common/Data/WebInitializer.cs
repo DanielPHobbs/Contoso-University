@@ -1,14 +1,12 @@
-﻿using ContosoUniversity.Data.Entities;
-using Microsoft.Extensions.Logging;
-using System.Linq;
-using ContosoUniversity.Data.DbContexts;
-using Microsoft.AspNetCore.Identity;
-using System.Threading.Tasks;
-using ContosoUniversity.Common.Interfaces;
-using Microsoft.Extensions.Options;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Hosting;
+﻿using ContosoUniversity.Common.Interfaces;
 using ContosoUniversity.Data;
+using ContosoUniversity.Data.Entities;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace ContosoUniversity.Common.Data
 {

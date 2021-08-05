@@ -1,12 +1,4 @@
-﻿using ContosoUniversity.Common;
-using ContosoUniversity.Common.Interfaces;
-using ContosoUniversity.Data.DbContexts;
-using ContosoUniversity.Data.Entities;
-using ContosoUniversity.Models.SchoolViewModels;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.Collections.Generic;
-using System.Data.Common;
-using System.Threading.Tasks;
+﻿using ContosoUniversity.Models.SchoolViewModels;
 
 namespace ContosoUniversity.Web.Pages
 {

@@ -1,6 +1,9 @@
-﻿using ContosoUniversity.Web.Controllers;
+﻿using ContosoUniversity.Common;
+using ContosoUniversity.Common.Interfaces;
+using ContosoUniversity.Data.DbContexts;
 using ContosoUniversity.Data.Entities;
 using ContosoUniversity.Tests;
+using ContosoUniversity.Web.Controllers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Moq;
@@ -11,9 +14,6 @@ using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Xunit;
 using Xunit.Abstractions;
-using ContosoUniversity.Common.Interfaces;
-using ContosoUniversity.Common;
-using ContosoUniversity.Data.DbContexts;
 
 namespace ContosoUniversity.Web.Tests.Controllers
 {
@@ -145,14 +145,14 @@ namespace ContosoUniversity.Web.Tests.Controllers
         public async Task EditPost_ReturnsANotFoundResult(int? id)
         {
             var result = await sut.EditPost(id);
-            
+
             Assert.IsType<NotFoundResult>(result);
             Assert.Equal(404, ((NotFoundResult)result).StatusCode);
-            
+
         }
 
-       [Theory]
-       [InlineData(1, 1050, 3, 3, "Chemistry")]
+        [Theory]
+        [InlineData(1, 1050, 3, 3, "Chemistry")]
         public async Task EditPost_ReturnsAViweResult_WithInvalidModel(int id, int courseNumber, int credits, int departmentID, string title)
         {
             mockModelBindingHelperAdaptor.Setup(m => m.TryUpdateModelAsync(It.IsAny<Controller>(), It.IsAny<Course>(), It.IsAny<string>(), It.IsAny<Expression<Func<Course, object>>[]>()))

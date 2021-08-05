@@ -1,17 +1,4 @@
-﻿using ContosoUniversity.Data.Entities;
-using ContosoUniversity.Web.ViewModels;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
-using System;
-using System.Security.Claims;
-using System.IdentityModel.Tokens.Jwt;
-using System.Text;
-using Microsoft.IdentityModel.Tokens;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.Extensions.Configuration;
-using System.Collections.Generic;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
+﻿using ContosoUniversity.Web.ViewModels;
 
 namespace ContosoUniversity.Web.Controllers
 {
@@ -42,7 +29,7 @@ namespace ContosoUniversity.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                
+
                 var user = await _userManager.FindByEmailAsync(model.Email);
                 if (user != null)
                 {

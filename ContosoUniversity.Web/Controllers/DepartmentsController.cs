@@ -1,16 +1,4 @@
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using ContosoUniversity.Data.Entities;
-using System;
 using ContosoUniversity.ViewModels;
-using ContosoUniversity.Common.Interfaces;
-using AutoMapper;
-using ContosoUniversity.Common;
-using ContosoUniversity.Data.DbContexts;
-using Microsoft.AspNetCore.Authorization;
 
 namespace ContosoUniversity.Web.Controllers
 {

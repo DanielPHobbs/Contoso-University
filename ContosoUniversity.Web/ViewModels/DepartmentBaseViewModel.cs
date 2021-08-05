@@ -1,7 +1,4 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-
-namespace ContosoUniversity.ViewModels
+﻿namespace ContosoUniversity.ViewModels
 {
     public abstract class DepartmentBaseViewModel
     {

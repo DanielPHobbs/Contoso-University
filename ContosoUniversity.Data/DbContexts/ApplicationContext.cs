@@ -28,7 +28,7 @@ namespace ContosoUniversity.Data.DbContexts
 
             var config = new DbContextConfig();
             config.ApplicationContextConfig(modelBuilder, schema);
-            
+
         }
     }
 }

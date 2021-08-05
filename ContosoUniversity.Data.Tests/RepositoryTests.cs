@@ -25,7 +25,7 @@ namespace ContosoUniversity.Data.Tests
         [Fact]
         public void Get_ReturnsEntityQueryable()
         {
-            var result =_sut.Get(0);
+            var result = _sut.Get(0);
 
             Assert.IsType(typeof(EntityQueryable<Department>), result);
         }
@@ -49,7 +49,7 @@ namespace ContosoUniversity.Data.Tests
             var departmentAdded = _sut.GetAll().Last();
             Assert.Equal(department.Name, departmentAdded.Name);
         }
-        
+
         [Fact]
         public async Task AddAsync_ShouldAddDepartment()
         {

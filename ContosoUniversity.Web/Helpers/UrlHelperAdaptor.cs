@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-
-namespace ContosoUniversity.Web.Helpers
+﻿namespace ContosoUniversity.Web.Helpers
 {
     public class UrlHelperAdaptor : IUrlHelperAdaptor
     {

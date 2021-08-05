@@ -1,7 +1,7 @@
-﻿using ContosoUniversity.Data.Entities;
-using ContosoUniversity.Common.Interfaces;
-using ContosoUniversity.Data;
+﻿using ContosoUniversity.Common.Interfaces;
 using ContosoUniversity.Common.Repositories;
+using ContosoUniversity.Data;
+using ContosoUniversity.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace ContosoUniversity.Common

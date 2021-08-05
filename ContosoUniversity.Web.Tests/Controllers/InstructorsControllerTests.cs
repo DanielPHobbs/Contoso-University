@@ -1,8 +1,11 @@
-﻿using ContosoUniversity.Web.Controllers;
+﻿using ContosoUniversity.Common;
+using ContosoUniversity.Common.Interfaces;
+using ContosoUniversity.Data.DbContexts;
 using ContosoUniversity.Data.Entities;
 using ContosoUniversity.Data.Enums;
 using ContosoUniversity.Models.SchoolViewModels;
 using ContosoUniversity.Tests;
+using ContosoUniversity.Web.Controllers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Moq;
@@ -13,9 +16,6 @@ using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Xunit;
 using Xunit.Abstractions;
-using ContosoUniversity.Common.Interfaces;
-using ContosoUniversity.Common;
-using ContosoUniversity.Data.DbContexts;
 
 namespace ContosoUniversity.Web.Tests.Controllers
 {
@@ -75,7 +75,7 @@ namespace ContosoUniversity.Web.Tests.Controllers
         }
 
         [Theory]
-        [InlineData(1,"Abercrombie")]
+        [InlineData(1, "Abercrombie")]
         public async Task Details_ReturnsAViewResult_WithInstructorModel(int id, string instructorName)
         {
             var result = await sut.Details(id);
@@ -151,7 +151,7 @@ namespace ContosoUniversity.Web.Tests.Controllers
             var modelState = ((ViewResult)result).ViewData.ModelState;
             Assert.Contains("myerror", modelState.Keys);
 
-            Assert.Equal(instructorCourses+1, ((Instructor)model).CourseAssignments.Count);
+            Assert.Equal(instructorCourses + 1, ((Instructor)model).CourseAssignments.Count);
         }
 
         [Theory]

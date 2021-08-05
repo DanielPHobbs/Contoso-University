@@ -1,7 +1,4 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-
-namespace ContosoUniversity.Spa.React.DTO
+﻿namespace ContosoUniversity.Spa.React.DTO
 {
     public class CreateDepartmentDTO
     {

@@ -1,17 +1,4 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.AspNetCore.Rewrite;
-using ContosoUniversity.Common;
-using ContosoUniversity.Common.Data;
-using ContosoUniversity.Common.Interfaces;
-using Swashbuckle.AspNetCore.Swagger;
-using AutoMapper;
-using ContosoUniversity.Data.DbContexts;
-
-namespace ContosoUniversity.Api
+﻿namespace ContosoUniversity.Api
 {
     public class Startup
     {

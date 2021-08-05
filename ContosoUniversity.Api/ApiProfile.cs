@@ -1,7 +1,4 @@
-﻿using AutoMapper;
-using ContosoUniversity.Api.DTO;
-using ContosoUniversity.Common.DTO;
-using ContosoUniversity.Data.Entities;
+﻿using ContosoUniversity.Api.DTO;
 
 namespace ContosoUniversity.Api
 {

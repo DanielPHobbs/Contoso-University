@@ -1,7 +1,4 @@
-﻿using AutoMapper;
-using ContosoUniversity.Data.Entities;
-using ContosoUniversity.ViewModels;
-using System.Text;
+﻿using ContosoUniversity.ViewModels;
 
 namespace ContosoUniversity.Web
 {

@@ -1,18 +1,18 @@
-﻿using Xunit;
+﻿using AutoMapper;
 using ContosoUniversity.Api.Controllers;
-using Moq;
-using ContosoUniversity.Data.Entities;
-using System.Collections.Generic;
-using System;
-using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
-using ContosoUniversity.Tests;
-using ContosoUniversity.Common.Interfaces;
-using AutoMapper;
-using ContosoUniversity.Common.DTO;
 using ContosoUniversity.Api.DTO;
 using ContosoUniversity.Common;
+using ContosoUniversity.Common.DTO;
+using ContosoUniversity.Common.Interfaces;
 using ContosoUniversity.Data.DbContexts;
+using ContosoUniversity.Data.Entities;
+using ContosoUniversity.Tests;
+using Microsoft.AspNetCore.Mvc;
+using Moq;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Xunit;
 
 namespace ContosoUniversity.Api.Tests
 {

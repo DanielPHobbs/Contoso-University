@@ -1,7 +1,4 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-
-namespace ContosoUniversity.Models.SchoolViewModels
+﻿namespace ContosoUniversity.Models.SchoolViewModels
 {
     public class EnrollmentDateGroup
     {

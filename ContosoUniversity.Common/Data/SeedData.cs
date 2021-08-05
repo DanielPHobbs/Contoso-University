@@ -1,8 +1,7 @@
-﻿using Microsoft.Extensions.Logging;
-using ContosoUniversity.Data.Entities;
-using System.Linq;
-using ContosoUniversity.Data;
+﻿using ContosoUniversity.Data.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using System.Linq;
 
 namespace ContosoUniversity.Common.Data
 {

@@ -1,10 +1,4 @@
-﻿using System.IO;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore;
-using Microsoft.Extensions.Configuration;
-
-namespace ContosoUniversity.Api
+﻿namespace ContosoUniversity.Api
 {
     public class Program
     {

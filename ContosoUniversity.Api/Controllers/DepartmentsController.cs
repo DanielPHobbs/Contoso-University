@@ -1,18 +1,4 @@
-﻿using System.Collections.Generic;
-using Microsoft.AspNetCore.Mvc;
-using ContosoUniversity.Common.Interfaces;
-using ContosoUniversity.Data.Entities;
-using System.Linq;
-using System.Threading.Tasks;
-using System;
-using AutoMapper;
-using ContosoUniversity.Common.DTO;
-using ContosoUniversity.Api.DTO;
-using ContosoUniversity.Data.DbContexts;
-using ContosoUniversity.Common;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Http;
+﻿using ContosoUniversity.Api.DTO;
 
 namespace ContosoUniversity.Api.Controllers
 {
@@ -97,7 +83,7 @@ namespace ContosoUniversity.Api.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody]DepartmentDTO dto)
+        public async Task<IActionResult> Update(int id, [FromBody] DepartmentDTO dto)
         {
             if (dto == null || id != dto.ID)
             {

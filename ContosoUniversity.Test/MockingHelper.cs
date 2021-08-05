@@ -1,5 +1,4 @@
-﻿using ContosoUniversity.Common;
-using ContosoUniversity.Common.Interfaces;
+﻿using ContosoUniversity.Common.Interfaces;
 using ContosoUniversity.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 using Moq;
@@ -35,7 +34,7 @@ namespace ContosoUniversity.Tests
         {
             var mockRepository = new Mock<IRepository<TEntity>>();
             mockRepository.Setup(c => c.AddAsync(It.IsAny<TEntity>()))
-                .Callback<TEntity>(d => 
+                .Callback<TEntity>(d =>
                 {
                     d.ID = data.Count() + 1;
                     data.Add(d);

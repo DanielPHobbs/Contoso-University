@@ -1,10 +1,4 @@
-﻿using System.IO;
-using Microsoft.AspNetCore;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
-
-namespace ContosoUniversity
+﻿namespace ContosoUniversity
 {
     public class Program
     {
@@ -13,7 +7,7 @@ namespace ContosoUniversity
             BuildWebHost(args).Run();
         }
 
-        public static IWebHost BuildWebHost(string[] args) => 
+        public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .ConfigureAppConfiguration(ConfigConfiguration)
                 .ConfigureLogging(ConfigureLogger)
@@ -26,12 +20,12 @@ namespace ContosoUniversity
         {
             config.SetBasePath(Directory.GetCurrentDirectory());
 
-            if (context.HostingEnvironment.IsDevelopment()) 
+            if (context.HostingEnvironment.IsDevelopment())
             {
                 config.AddJsonFile($"sampleData.json", optional: true, reloadOnChange: false);
                 config.AddUserSecrets<Startup>();
             }
-            
+
             config.AddEnvironmentVariables();
         }
 

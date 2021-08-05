@@ -1,6 +1,8 @@
-﻿using ContosoUniversity.Data.Entities;
-using ContosoUniversity.Common;
-using Microsoft.AspNetCore.Builder;
+﻿using ContosoUniversity.Common;
+using ContosoUniversity.Data.Entities;
+using ContosoUniversity.Web.Controllers;
+using ContosoUniversity.Web.Helpers;
+using ContosoUniversity.Web.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -8,13 +10,10 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Moq;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Xunit;
 using Xunit.Abstractions;
-using System.Collections.Generic;
-using ContosoUniversity.Web.Controllers;
-using ContosoUniversity.Web.Helpers;
-using ContosoUniversity.Web.ViewModels;
 
 namespace ContosoUniversity.Web.Tests.Controllers
 {

@@ -1,6 +1,11 @@
-﻿using ContosoUniversity.Web.Controllers;
+﻿using AutoMapper;
+using ContosoUniversity.Common;
+using ContosoUniversity.Common.Interfaces;
+using ContosoUniversity.Data.DbContexts;
 using ContosoUniversity.Data.Entities;
+using ContosoUniversity.Tests;
 using ContosoUniversity.ViewModels;
+using ContosoUniversity.Web.Controllers;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 using System;
@@ -9,11 +14,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
 using Xunit.Abstractions;
-using ContosoUniversity.Tests;
-using ContosoUniversity.Common.Interfaces;
-using AutoMapper;
-using ContosoUniversity.Common;
-using ContosoUniversity.Data.DbContexts;
 
 namespace ContosoUniversity.Web.Tests.Controllers
 {
@@ -160,7 +160,7 @@ namespace ContosoUniversity.Web.Tests.Controllers
         {
             //mockModelBindingHelperAdaptor.Setup(m => m.TryUpdateModelAsync(It.IsAny<Controller>(), It.IsAny<Department>(), It.IsAny<string>(), It.IsAny<Expression<Func<Department, object>>[]>()))
             //    .Returns(Task.FromResult(true));
-            
+
             var vm = new DepartmentEditViewModel { ID = 1 };
 
             var result = await sut.Edit(vm);
@@ -233,6 +233,6 @@ namespace ContosoUniversity.Web.Tests.Controllers
                 new Department { ID = 3, Name = "Engineering", Budget = 350000, AddedDate = DateTime.UtcNow, ModifiedDate = DateTime.UtcNow, StartDate = DateTime.Parse("2007-09-01"), InstructorID  = 3 },
                 new Department { ID = 4, Name = "Economics",   Budget = 100000, AddedDate = DateTime.UtcNow, ModifiedDate = DateTime.UtcNow, StartDate = DateTime.Parse("2007-09-01"), InstructorID  = 4 }
         };
-        
+
     }
 }
